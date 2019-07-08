@@ -1,0 +1,14 @@
+C:\Work\vb2013\Project Development Apps\Project Development Apps\bin\Debug\Project Development Apps.exe.config
+C:\Work\vb2013\Project Development Apps\Project Development Apps\bin\Debug\Project Development Apps.exe
+C:\Work\vb2013\Project Development Apps\Project Development Apps\bin\Debug\Project Development Apps.pdb
+C:\Work\vb2013\Project Development Apps\Project Development Apps\bin\Debug\Project Development Apps.xml
+C:\Work\vb2013\Project Development Apps\Project Development Apps\obj\Debug\Project Development Apps.vbprojResolveAssemblyReference.cache
+C:\Work\vb2013\Project Development Apps\Project Development Apps\obj\Debug\Project Development Apps.vbproj.ResolveComReference.cache
+C:\Work\vb2013\Project Development Apps\Project Development Apps\obj\Debug\Project_Development_Apps.Form1.resources
+C:\Work\vb2013\Project Development Apps\Project Development Apps\obj\Debug\Project_Development_Apps.Resources.resources
+C:\Work\vb2013\Project Development Apps\Project Development Apps\obj\Debug\Project Development Apps.vbproj.GenerateResource.Cache
+C:\Work\vb2013\Project Development Apps\Project Development Apps\obj\Debug\Project Development Apps.exe
+C:\Work\vb2013\Project Development Apps\Project Development Apps\obj\Debug\Project Development Apps.xml
+C:\Work\vb2013\Project Development Apps\Project Development Apps\obj\Debug\Project Development Apps.pdb
+C:\Work\vb2013\Project Development Apps\Project Development Apps\obj\Debug\Project_Development_Apps.FormMenu.resources
+C:\Work\vb2013\Project Development Apps\Project Development Apps\obj\Debug\Project_Development_Apps.FormUser.resources

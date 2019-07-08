@@ -1,0 +1,5 @@
+C:\Work\vb2013\Project Development Apps\Project Development Apps\bin\Debug\Project Development Apps.exe.config
+C:\Work\vb2013\Project Development Apps\Project Development Apps\obj\Debug\ProjectDevelopmentApps.vbproj.ResolveComReference.cache
+C:\Work\vb2013\Project Development Apps\Project Development Apps\obj\Debug\Project Development Apps.exe
+C:\Work\vb2013\Project Development Apps\Project Development Apps\obj\Debug\Project Development Apps.xml
+C:\Work\vb2013\Project Development Apps\Project Development Apps\obj\Debug\Project Development Apps.pdb

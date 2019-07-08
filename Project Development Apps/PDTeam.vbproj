@@ -1,0 +1,537 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0A0FCDF7-1DDC-4740-8A54-00B2408C3AA6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>PDTeam.My.MyApplication</StartupObject>
+    <RootNamespace>PDTeam</RootNamespace>
+    <AssemblyName>PDTeam</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>PDTeam.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>PDTeam.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>PD.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="npgsql, Version=2.1.3.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Windows\Microsoft.NET\assembly\GAC_MSIL\Npgsql\v4.0_2.0.10.0__5d8b90d52f46fda7\npgsql.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class\ActiveDirectory.vb" />
+    <Compile Include="Class\BaseAdapter.vb" />
+    <Compile Include="Class\ClassGenReport.vb" />
+    <Compile Include="Class\ClassReportKPI.vb" />
+    <Compile Include="Class\ContentBaseEventArgs.vb" />
+    <Compile Include="Class\DbAdapter.vb" />
+    <Compile Include="Class\ExportToExcel.vb" />
+    <Compile Include="Class\IAdapter.vb" />
+    <Compile Include="Class\OpenUserAdapter.vb" />
+    <Compile Include="Class\PeriodAdapter.vb" />
+    <Compile Include="Class\ProjectAdapter.vb" />
+    <Compile Include="Class\ProjectSignedAdapter.vb" />
+    <Compile Include="Class\ProjectSignedAdapter2.vb" />
+    <Compile Include="Class\ProjectTxAdjustment.vb" />
+    <Compile Include="Class\SaveHistoryAdapter.vb" />
+    <Compile Include="Class\UserAdapter.vb" />
+    <Compile Include="Class\UserInfo.vb" />
+    <Compile Include="Class\VendorAdapter.vb" />
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMenu.Designer.vb">
+      <DependentUpon>FormMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\DialogAddRemoveRole.Designer.vb">
+      <DependentUpon>DialogAddRemoveRole.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\DialogAddRemoveRole.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\DialogAddRemoveUserRole.Designer.vb">
+      <DependentUpon>DialogAddRemoveUserRole.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\DialogAddRemoveUserRole.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\DialogExtendPeriod.Designer.vb">
+      <DependentUpon>DialogExtendPeriod.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\DialogExtendPeriod.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\DialogFailedStatusInput.Designer.vb">
+      <DependentUpon>DialogFailedStatusInput.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\DialogFailedStatusInput.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\DialogOpenUser.Designer.vb">
+      <DependentUpon>DialogOpenUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\DialogOpenUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\DialogProjectHelper.Designer.vb">
+      <DependentUpon>DialogProjectHelper.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\DialogProjectHelper.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\DialogProjectIDVendor.Designer.vb">
+      <DependentUpon>DialogProjectIDVendor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\DialogProjectIDVendor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\DialogProjectIDVendor2.Designer.vb">
+      <DependentUpon>DialogProjectIDVendor2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\DialogProjectIDVendor2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\DialogProjectInput.Designer.vb">
+      <DependentUpon>DialogProjectInput.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\DialogProjectInput.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\DialogProjectInput2.Designer.vb">
+      <DependentUpon>DialogProjectInput2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\DialogProjectInput2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\DialogProjectInput3.Designer.vb">
+      <DependentUpon>DialogProjectInput3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\DialogProjectInput3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\DialogProjectSignedInput.Designer.vb">
+      <DependentUpon>DialogProjectSignedInput.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\DialogProjectSignedInput.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\DialogProjectSignedInput2.Designer.vb">
+      <DependentUpon>DialogProjectSignedInput2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\DialogProjectSignedInput2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\DialogRole.Designer.vb">
+      <DependentUpon>DialogRole.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\DialogRole.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\DialogTopVendor.Designer.vb">
+      <DependentUpon>DialogTopVendor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\DialogTopVendor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\DialogTopVendorInput.Designer.vb">
+      <DependentUpon>DialogTopVendorInput.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\DialogTopVendorInput.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\DialogTopVendorInputV2.Designer.vb">
+      <DependentUpon>DialogTopVendorInputV2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\DialogTopVendorInputV2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\DialogTopVendorV2.Designer.vb">
+      <DependentUpon>DialogTopVendorV2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\DialogTopVendorV2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\DialogUserInput.Designer.vb">
+      <DependentUpon>DialogUserInput.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\DialogUserInput.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\DialogUserRole.Designer.vb">
+      <DependentUpon>DialogUserRole.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\DialogUserRole.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\DialogVendorInput.Designer.vb">
+      <DependentUpon>DialogVendorInput.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\DialogVendorInput.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\DialogVendorInputV2.Designer.vb">
+      <DependentUpon>DialogVendorInputV2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\DialogVendorInputV2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormExportTransaction.Designer.vb">
+      <DependentUpon>FormExportTransaction.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FormExportTransaction.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormFailedStatusAdjustment.Designer.vb">
+      <DependentUpon>FormFailedStatusAdjustment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FormFailedStatusAdjustment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormProjectMaintenance.Designer.vb">
+      <DependentUpon>FormProjectMaintenance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FormProjectMaintenance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormProjectSigned.Designer.vb">
+      <DependentUpon>FormProjectSigned.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FormProjectSigned.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormReportKPI.Designer.vb">
+      <DependentUpon>FormReportKPI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FormReportKPI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormSaveHistory.Designer.vb">
+      <DependentUpon>FormSaveHistory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FormSaveHistory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormUser.Designer.vb">
+      <DependentUpon>FormUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FormUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormVendor.Designer.vb">
+      <DependentUpon>FormVendor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FormVendor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormVendorV2.Designer.vb">
+      <DependentUpon>FormVendorV2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FormVendorV2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMenu.resx">
+      <DependentUpon>FormMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\DialogAddRemoveRole.resx">
+      <DependentUpon>DialogAddRemoveRole.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\DialogAddRemoveUserRole.resx">
+      <DependentUpon>DialogAddRemoveUserRole.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\DialogExtendPeriod.resx">
+      <DependentUpon>DialogExtendPeriod.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\DialogFailedStatusInput.resx">
+      <DependentUpon>DialogFailedStatusInput.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\DialogOpenUser.resx">
+      <DependentUpon>DialogOpenUser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\DialogProjectHelper.resx">
+      <DependentUpon>DialogProjectHelper.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\DialogProjectIDVendor.resx">
+      <DependentUpon>DialogProjectIDVendor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\DialogProjectIDVendor2.resx">
+      <DependentUpon>DialogProjectIDVendor2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\DialogProjectInput.resx">
+      <DependentUpon>DialogProjectInput.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\DialogProjectInput2.resx">
+      <DependentUpon>DialogProjectInput2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\DialogProjectInput3.resx">
+      <DependentUpon>DialogProjectInput3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\DialogProjectSignedInput.resx">
+      <DependentUpon>DialogProjectSignedInput.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\DialogProjectSignedInput2.resx">
+      <DependentUpon>DialogProjectSignedInput2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\DialogRole.resx">
+      <DependentUpon>DialogRole.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\DialogTopVendor.resx">
+      <DependentUpon>DialogTopVendor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\DialogTopVendorInput.resx">
+      <DependentUpon>DialogTopVendorInput.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\DialogTopVendorInputV2.resx">
+      <DependentUpon>DialogTopVendorInputV2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\DialogTopVendorV2.resx">
+      <DependentUpon>DialogTopVendorV2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\DialogUserInput.resx">
+      <DependentUpon>DialogUserInput.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\DialogUserRole.resx">
+      <DependentUpon>DialogUserRole.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\DialogVendorInput.resx">
+      <DependentUpon>DialogVendorInput.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\DialogVendorInputV2.resx">
+      <DependentUpon>DialogVendorInputV2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormExportTransaction.resx">
+      <DependentUpon>FormExportTransaction.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormFailedStatusAdjustment.resx">
+      <DependentUpon>FormFailedStatusAdjustment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormProjectMaintenance.resx">
+      <DependentUpon>FormProjectMaintenance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormProjectSigned.resx">
+      <DependentUpon>FormProjectSigned.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormReportKPI.resx">
+      <DependentUpon>FormReportKPI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormSaveHistory.resx">
+      <DependentUpon>FormSaveHistory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormUser.resx">
+      <DependentUpon>FormUser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormVendor.resx">
+      <DependentUpon>FormVendor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormVendorV2.resx">
+      <DependentUpon>FormVendorV2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>4</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\action_add_16xLG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\action_add_16xMD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\action_add_16xSM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\action_Cancel_16xLG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\action_Cancel_16xMD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\action_Cancel_16xSM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\filter_16xLG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\filter_16xMD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\filter_16xSM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\refresh_16xLG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\refresh_16xMD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\refresh_16xSM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Remove_16xLG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Remove_16xMD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Remove_16xSM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\save_16xLG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\save_16xMD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\save_16xSM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\WritetoDatabase_9889.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="PD.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
