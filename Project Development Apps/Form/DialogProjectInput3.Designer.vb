@@ -62,12 +62,21 @@ Partial Class DialogProjectInput3
         Me.Label5 = New System.Windows.Forms.Label()
         Me.ComboBox3 = New System.Windows.Forms.ComboBox()
         Me.ErrorProvider1 = New System.Windows.Forms.ErrorProvider(Me.components)
+        Me.ComboBox7 = New System.Windows.Forms.ComboBox()
+        Me.ComboBox8 = New System.Windows.Forms.ComboBox()
+        Me.ComboBox9 = New System.Windows.Forms.ComboBox()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.Label15 = New System.Windows.Forms.Label()
+        Me.Label16 = New System.Windows.Forms.Label()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.Panel3.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.Panel1.SuspendLayout()
         CType(Me.ErrorProvider1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
         '
         'TableLayoutPanel1
@@ -109,7 +118,7 @@ Partial Class DialogProjectInput3
         Me.GroupBox1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.GroupBox1.Controls.Add(Me.ComboBox6)
+        Me.GroupBox1.Controls.Add(Me.GroupBox2)
         Me.GroupBox1.Controls.Add(Me.Panel3)
         Me.GroupBox1.Controls.Add(Me.MaskedTextBox1)
         Me.GroupBox1.Controls.Add(Me.Panel2)
@@ -144,9 +153,9 @@ Partial Class DialogProjectInput3
         '
         Me.ComboBox6.FormattingEnabled = True
         Me.ComboBox6.Items.AddRange(New Object() {"Cookware", "Home Comfort", "Home Cleaning", "etc..."})
-        Me.ComboBox6.Location = New System.Drawing.Point(274, 108)
+        Me.ComboBox6.Location = New System.Drawing.Point(113, 20)
         Me.ComboBox6.Name = "ComboBox6"
-        Me.ComboBox6.Size = New System.Drawing.Size(154, 21)
+        Me.ComboBox6.Size = New System.Drawing.Size(283, 21)
         Me.ComboBox6.TabIndex = 31
         Me.ComboBox6.Visible = False
         '
@@ -461,6 +470,90 @@ Partial Class DialogProjectInput3
         '
         Me.ErrorProvider1.ContainerControl = Me
         '
+        'ComboBox7
+        '
+        Me.ComboBox7.FormattingEnabled = True
+        Me.ComboBox7.Items.AddRange(New Object() {"Select from the list"})
+        Me.ComboBox7.Location = New System.Drawing.Point(113, 46)
+        Me.ComboBox7.Name = "ComboBox7"
+        Me.ComboBox7.Size = New System.Drawing.Size(283, 21)
+        Me.ComboBox7.TabIndex = 32
+        Me.ComboBox7.Visible = False
+        '
+        'ComboBox8
+        '
+        Me.ComboBox8.FormattingEnabled = True
+        Me.ComboBox8.Items.AddRange(New Object() {"Select from the list"})
+        Me.ComboBox8.Location = New System.Drawing.Point(113, 73)
+        Me.ComboBox8.Name = "ComboBox8"
+        Me.ComboBox8.Size = New System.Drawing.Size(283, 21)
+        Me.ComboBox8.TabIndex = 33
+        Me.ComboBox8.Visible = False
+        '
+        'ComboBox9
+        '
+        Me.ComboBox9.FormattingEnabled = True
+        Me.ComboBox9.Items.AddRange(New Object() {"Select from the list"})
+        Me.ComboBox9.Location = New System.Drawing.Point(113, 100)
+        Me.ComboBox9.Name = "ComboBox9"
+        Me.ComboBox9.Size = New System.Drawing.Size(283, 21)
+        Me.ComboBox9.TabIndex = 34
+        Me.ComboBox9.Visible = False
+        '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.Location = New System.Drawing.Point(49, 23)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(58, 13)
+        Me.Label13.TabIndex = 35
+        Me.Label13.Text = "Sub Family"
+        '
+        'Label14
+        '
+        Me.Label14.AutoSize = True
+        Me.Label14.Location = New System.Drawing.Point(10, 49)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(97, 13)
+        Me.Label14.TabIndex = 36
+        Me.Label14.Text = "Product Categories"
+        '
+        'Label15
+        '
+        Me.Label15.AutoSize = True
+        Me.Label15.Location = New System.Drawing.Point(40, 76)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(67, 13)
+        Me.Label15.TabIndex = 37
+        Me.Label15.Text = "Project Type"
+        '
+        'Label16
+        '
+        Me.Label16.AutoSize = True
+        Me.Label16.Location = New System.Drawing.Point(39, 103)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(68, 13)
+        Me.Label16.TabIndex = 38
+        Me.Label16.Text = "Quality Level"
+        '
+        'GroupBox2
+        '
+        Me.GroupBox2.Controls.Add(Me.Label16)
+        Me.GroupBox2.Controls.Add(Me.Label15)
+        Me.GroupBox2.Controls.Add(Me.Label14)
+        Me.GroupBox2.Controls.Add(Me.Label13)
+        Me.GroupBox2.Controls.Add(Me.ComboBox9)
+        Me.GroupBox2.Controls.Add(Me.ComboBox8)
+        Me.GroupBox2.Controls.Add(Me.ComboBox7)
+        Me.GroupBox2.Controls.Add(Me.ComboBox6)
+        Me.GroupBox2.Location = New System.Drawing.Point(417, 8)
+        Me.GroupBox2.Name = "GroupBox2"
+        Me.GroupBox2.Size = New System.Drawing.Size(407, 130)
+        Me.GroupBox2.TabIndex = 39
+        Me.GroupBox2.TabStop = False
+        Me.GroupBox2.Text = "BU - Cookware Additional Info"
+        Me.GroupBox2.Visible = False
+        '
         'DialogProjectInput3
         '
         Me.AcceptButton = Me.OK_Button
@@ -487,6 +580,8 @@ Partial Class DialogProjectInput3
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         CType(Me.ErrorProvider1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox2.ResumeLayout(False)
+        Me.GroupBox2.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -529,5 +624,13 @@ Partial Class DialogProjectInput3
     Friend WithEvents ComboBox3 As System.Windows.Forms.ComboBox
     Friend WithEvents ErrorProvider1 As System.Windows.Forms.ErrorProvider
     Friend WithEvents ComboBox6 As System.Windows.Forms.ComboBox
+    Friend WithEvents Label16 As System.Windows.Forms.Label
+    Friend WithEvents Label15 As System.Windows.Forms.Label
+    Friend WithEvents Label14 As System.Windows.Forms.Label
+    Friend WithEvents Label13 As System.Windows.Forms.Label
+    Friend WithEvents ComboBox9 As System.Windows.Forms.ComboBox
+    Friend WithEvents ComboBox8 As System.Windows.Forms.ComboBox
+    Friend WithEvents ComboBox7 As System.Windows.Forms.ComboBox
+    Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
 
 End Class

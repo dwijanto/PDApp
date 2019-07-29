@@ -370,6 +370,8 @@ Public Class DialogProjectInput3
         Dim mydrv As DataRowView = ComboBox1.SelectedItem
         If Not IsNothing(mydrv) Then
             If mydrv.Item("sbuname") = "Cookware" Then
+                GroupBox2.Visible = True
+
                 If ComboBox6.Visible = False Then
                     ComboBox6.Visible = True
                     If ComboBox6.SelectedIndex < 0 Then
@@ -377,10 +379,47 @@ Public Class DialogProjectInput3
                     End If
 
                 End If
-                
+                If ComboBox7.Visible = False Then
+                    ComboBox7.Visible = True
+                    If ComboBox7.SelectedIndex < 0 Then
+                        ComboBox7.SelectedIndex = 0
+                    End If
+
+                End If
+                If ComboBox8.Visible = False Then
+                    ComboBox8.Visible = True
+                    If ComboBox8.SelectedIndex < 0 Then
+                        ComboBox8.SelectedIndex = 0
+                    End If
+
+                End If
+                If ComboBox9.Visible = False Then
+                    ComboBox9.Visible = True
+                    If ComboBox9.SelectedIndex < 0 Then
+                        ComboBox9.SelectedIndex = 0
+                    End If
+
+                End If
+                'Label13.Visible = True
+                'Label14.Visible = True
+                'Label15.Visible = True
+                'Label16.Visible = True
+
             Else
+                GroupBox2.Visible = False
+
                 ComboBox6.Visible = False
                 ComboBox6.SelectedIndex = -1
+                ComboBox7.Visible = False
+                ComboBox7.SelectedIndex = -1
+                ComboBox8.Visible = False
+                ComboBox8.SelectedIndex = -1
+                ComboBox9.Visible = False
+                ComboBox9.SelectedIndex = -1
+                'Label13.Visible = False
+                'Label14.Visible = False
+                'Label15.Visible = False
+                'Label16.Visible = False
             End If
         End If
 
