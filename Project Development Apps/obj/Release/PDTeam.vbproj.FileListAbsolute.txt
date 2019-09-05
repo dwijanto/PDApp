@@ -42,3 +42,47 @@ C:\Work\vb2013\Project Development Apps\Project Development Apps\obj\Release\PDT
 C:\Work\vb2013\Project Development Apps\Project Development Apps\obj\Release\PDTeam.DialogProjectIDVendor2.resources
 C:\Work\vb2013\Project Development Apps\Project Development Apps\obj\Release\PDTeam.DialogProjectSignedInput2.resources
 C:\Work\vb2013\Project Development Apps\Project Development Apps\obj\Release\PDTeam.DialogProjectInput3.resources
+C:\Users\dlie\Documents\GitHub\PDApp\Project Development Apps\bin\Release\PDTeam.exe.config
+C:\Users\dlie\Documents\GitHub\PDApp\Project Development Apps\obj\Release\PDTeam.vbproj.ResolveComReference.cache
+C:\Users\dlie\Documents\GitHub\PDApp\Project Development Apps\obj\Release\PDTeam.exe
+C:\Users\dlie\Documents\GitHub\PDApp\Project Development Apps\obj\Release\PDTeam.xml
+C:\Users\dlie\Documents\GitHub\PDApp\Project Development Apps\obj\Release\PDTeam.pdb
+C:\Users\dlie\Documents\GitHub\PDApp\Project Development Apps\bin\Release\PDTeam.exe
+C:\Users\dlie\Documents\GitHub\PDApp\Project Development Apps\bin\Release\PDTeam.pdb
+C:\Users\dlie\Documents\GitHub\PDApp\Project Development Apps\bin\Release\PDTeam.xml
+C:\Users\dlie\Documents\GitHub\PDApp\Project Development Apps\obj\Release\PDTeam.vbprojResolveAssemblyReference.cache
+C:\Users\dlie\Documents\GitHub\PDApp\Project Development Apps\obj\Release\PDTeam.Form1.resources
+C:\Users\dlie\Documents\GitHub\PDApp\Project Development Apps\obj\Release\PDTeam.FormMenu.resources
+C:\Users\dlie\Documents\GitHub\PDApp\Project Development Apps\obj\Release\PDTeam.DialogAddRemoveRole.resources
+C:\Users\dlie\Documents\GitHub\PDApp\Project Development Apps\obj\Release\PDTeam.DialogAddRemoveUserRole.resources
+C:\Users\dlie\Documents\GitHub\PDApp\Project Development Apps\obj\Release\PDTeam.DialogExtendPeriod.resources
+C:\Users\dlie\Documents\GitHub\PDApp\Project Development Apps\obj\Release\PDTeam.DialogFailedStatusInput.resources
+C:\Users\dlie\Documents\GitHub\PDApp\Project Development Apps\obj\Release\PDTeam.DialogOpenUser.resources
+C:\Users\dlie\Documents\GitHub\PDApp\Project Development Apps\obj\Release\PDTeam.DialogProjectHelper.resources
+C:\Users\dlie\Documents\GitHub\PDApp\Project Development Apps\obj\Release\PDTeam.DialogProjectIDVendor.resources
+C:\Users\dlie\Documents\GitHub\PDApp\Project Development Apps\obj\Release\PDTeam.DialogProjectIDVendor2.resources
+C:\Users\dlie\Documents\GitHub\PDApp\Project Development Apps\obj\Release\PDTeam.DialogProjectInput.resources
+C:\Users\dlie\Documents\GitHub\PDApp\Project Development Apps\obj\Release\PDTeam.DialogProjectInput2.resources
+C:\Users\dlie\Documents\GitHub\PDApp\Project Development Apps\obj\Release\PDTeam.DialogProjectInput3.resources
+C:\Users\dlie\Documents\GitHub\PDApp\Project Development Apps\obj\Release\PDTeam.DialogProjectSignedInput.resources
+C:\Users\dlie\Documents\GitHub\PDApp\Project Development Apps\obj\Release\PDTeam.DialogProjectSignedInput2.resources
+C:\Users\dlie\Documents\GitHub\PDApp\Project Development Apps\obj\Release\PDTeam.DialogRole.resources
+C:\Users\dlie\Documents\GitHub\PDApp\Project Development Apps\obj\Release\PDTeam.DialogTopVendor.resources
+C:\Users\dlie\Documents\GitHub\PDApp\Project Development Apps\obj\Release\PDTeam.DialogTopVendorInput.resources
+C:\Users\dlie\Documents\GitHub\PDApp\Project Development Apps\obj\Release\PDTeam.DialogTopVendorInputV2.resources
+C:\Users\dlie\Documents\GitHub\PDApp\Project Development Apps\obj\Release\PDTeam.DialogTopVendorV2.resources
+C:\Users\dlie\Documents\GitHub\PDApp\Project Development Apps\obj\Release\PDTeam.DialogUserInput.resources
+C:\Users\dlie\Documents\GitHub\PDApp\Project Development Apps\obj\Release\PDTeam.DialogUserRole.resources
+C:\Users\dlie\Documents\GitHub\PDApp\Project Development Apps\obj\Release\PDTeam.DialogVendorInput.resources
+C:\Users\dlie\Documents\GitHub\PDApp\Project Development Apps\obj\Release\PDTeam.DialogVendorInputV2.resources
+C:\Users\dlie\Documents\GitHub\PDApp\Project Development Apps\obj\Release\PDTeam.FormExportTransaction.resources
+C:\Users\dlie\Documents\GitHub\PDApp\Project Development Apps\obj\Release\PDTeam.FormFailedStatusAdjustment.resources
+C:\Users\dlie\Documents\GitHub\PDApp\Project Development Apps\obj\Release\PDTeam.FormProjectMaintenance.resources
+C:\Users\dlie\Documents\GitHub\PDApp\Project Development Apps\obj\Release\PDTeam.FormProjectSigned.resources
+C:\Users\dlie\Documents\GitHub\PDApp\Project Development Apps\obj\Release\PDTeam.FormReportKPI.resources
+C:\Users\dlie\Documents\GitHub\PDApp\Project Development Apps\obj\Release\PDTeam.FormSaveHistory.resources
+C:\Users\dlie\Documents\GitHub\PDApp\Project Development Apps\obj\Release\PDTeam.FormUser.resources
+C:\Users\dlie\Documents\GitHub\PDApp\Project Development Apps\obj\Release\PDTeam.FormVendor.resources
+C:\Users\dlie\Documents\GitHub\PDApp\Project Development Apps\obj\Release\PDTeam.FormVendorV2.resources
+C:\Users\dlie\Documents\GitHub\PDApp\Project Development Apps\obj\Release\PDTeam.Resources.resources
+C:\Users\dlie\Documents\GitHub\PDApp\Project Development Apps\obj\Release\PDTeam.vbproj.GenerateResource.Cache

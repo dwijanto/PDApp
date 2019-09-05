@@ -12,6 +12,10 @@ Public Class DialogProjectInput3
     Private RoleBS As BindingSource
     Private PICBS As BindingSource
     Private SUBSBUBS As BindingSource
+    Private CategoriesBS As BindingSource
+    Private PTypeBS As BindingSource
+    Private QualityLevelBS As BindingSource
+
 
     Public myadapter As ProjectAdapter
     Public Shared Event SaveRecord(ByRef sender As Object, ByVal e As EventArgs)
@@ -27,8 +31,10 @@ Public Class DialogProjectInput3
                 Return 1
             ElseIf RadioButton2.Checked = True Then
                 Return 2
-            Else
+            ElseIf RadioButton3.Checked = True Then
                 Return 3
+            Else
+                Return 4
             End If
         End Get
         Set(value As Integer)
@@ -38,6 +44,8 @@ Public Class DialogProjectInput3
                 RadioButton2.Checked = True
             ElseIf value = 3 Then
                 RadioButton3.Checked = True
+            ElseIf value = 4 Then
+                RadioButton4.Checked = True
             End If
         End Set
     End Property
@@ -75,6 +83,9 @@ Public Class DialogProjectInput3
         Me.RoleBS = New BindingSource
         Me.PICBS = New BindingSource
         Me.SUBSBUBS = New BindingSource
+        Me.CategoriesBS = New BindingSource
+        Me.PTypeBS = New BindingSource
+        Me.QualityLevelBS = New BindingSource
 
         Me.SBUBS.DataSource = myadapter.SBUBS
         Me.VendorBS.DataSource = myadapter.VendorBS
@@ -82,6 +93,9 @@ Public Class DialogProjectInput3
         Me.RoleBS.DataSource = myadapter.RoleBS
         Me.PICBS.DataSource = myadapter.PICBS
         Me.SUBSBUBS.DataSource = myadapter.SubSBUBS
+        Me.CategoriesBS.DataSource = myadapter.CategoriesBS
+        Me.PTypeBS.DataSource = myadapter.PTypeBS
+        Me.QualityLevelBS.DataSource = myadapter.QualityLevelBS
 
         If StatusTx = TxRecord.AddRecord Then
             Dim drv As DataRowView = Me.BS.AddNew()
@@ -181,8 +195,8 @@ Public Class DialogProjectInput3
             myret = False
         End If
 
-        If RadioButton1.Checked = False And RadioButton2.Checked = False And RadioButton3.Checked = False Then
-            ErrorProvider1.SetError(RadioButton3, "Select one option.")
+        If RadioButton1.Checked = False And RadioButton2.Checked = False And RadioButton3.Checked = False And RadioButton4.Checked = False Then
+            ErrorProvider1.SetError(RadioButton4, "Select one option.")
             myret = False
         End If
 
@@ -265,6 +279,18 @@ Public Class DialogProjectInput3
         ComboBox6.DisplayMember = "subsbuname"
         ComboBox6.ValueMember = "subsbuid"
 
+        ComboBox7.DataSource = Me.CategoriesBS
+        ComboBox7.DisplayMember = "categories"
+        ComboBox7.ValueMember = "id"
+
+        ComboBox8.DataSource = Me.PTypeBS
+        ComboBox8.DisplayMember = "ptype"
+        ComboBox8.ValueMember = "id"
+
+        ComboBox9.DataSource = Me.QualityLevelBS
+        ComboBox9.DisplayMember = "qualitylevel"
+        ComboBox9.ValueMember = "id"
+
         MaskedTextBox1.DataBindings.Clear()
         TextBox1.DataBindings.Clear()
         TextBox2.DataBindings.Clear()
@@ -275,6 +301,12 @@ Public Class DialogProjectInput3
         ComboBox3.DataBindings.Clear()
         ComboBox4.DataBindings.Clear()
         ComboBox5.DataBindings.Clear()
+
+        ComboBox6.DataBindings.Clear()
+        ComboBox7.DataBindings.Clear()
+        ComboBox8.DataBindings.Clear()
+        ComboBox9.DataBindings.Clear()
+
         DateTimePicker1.DataBindings.Clear()
 
         MaskedTextBox1.DataBindings.Add(New Binding("text", Me.BS, "projectid", True, DataSourceUpdateMode.OnPropertyChanged, ""))
@@ -288,6 +320,9 @@ Public Class DialogProjectInput3
         ComboBox5.DataBindings.Add(New Binding("SelectedValue", Me.BS, "pic", True, DataSourceUpdateMode.OnPropertyChanged))
 
         ComboBox6.DataBindings.Add(New Binding("SelectedValue", Me.BS, "subsbuid", True, DataSourceUpdateMode.OnPropertyChanged))
+        ComboBox7.DataBindings.Add(New Binding("SelectedValue", Me.BS, "categoryid", True, DataSourceUpdateMode.OnPropertyChanged))
+        ComboBox8.DataBindings.Add(New Binding("SelectedValue", Me.BS, "ptypeid", True, DataSourceUpdateMode.OnPropertyChanged))
+        ComboBox9.DataBindings.Add(New Binding("SelectedValue", Me.BS, "qualitylevelid", True, DataSourceUpdateMode.OnPropertyChanged))
 
         CheckBox1.DataBindings.Add(New Binding("checked", Me.BS, "variant", True, DataSourceUpdateMode.OnPropertyChanged))
         CheckBox2.DataBindings.Add(New Binding("checked", Me.BS, "countasrunningproject", True, DataSourceUpdateMode.OnPropertyChanged))
@@ -307,7 +342,7 @@ Public Class DialogProjectInput3
         RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(name))
     End Sub
 
-    Private Sub RadioButton1_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton1.CheckedChanged, RadioButton3.CheckedChanged, RadioButton2.CheckedChanged
+    Private Sub RadioButton1_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton1.CheckedChanged, RadioButton3.CheckedChanged, RadioButton2.CheckedChanged, RadioButton4.CheckedChanged
         onPropertyChanged("ProjectType")
     End Sub
 
@@ -400,10 +435,6 @@ Public Class DialogProjectInput3
                     End If
 
                 End If
-                'Label13.Visible = True
-                'Label14.Visible = True
-                'Label15.Visible = True
-                'Label16.Visible = True
 
             Else
                 GroupBox2.Visible = False
@@ -416,10 +447,7 @@ Public Class DialogProjectInput3
                 ComboBox8.SelectedIndex = -1
                 ComboBox9.Visible = False
                 ComboBox9.SelectedIndex = -1
-                'Label13.Visible = False
-                'Label14.Visible = False
-                'Label15.Visible = False
-                'Label16.Visible = False
+                
             End If
         End If
 

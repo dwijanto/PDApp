@@ -1,6 +1,18 @@
 ﻿Public Class ClassReportKPI
 
     Public Function getRawData(ByVal startdate As Date, ByVal lastdate As Date)
+        'Return String.Format(" with r as ( select * from pd.sp_getkpi01('{0:yyyy-MM-dd}'::date,'{1:yyyy-MM-dd}'::date)" &
+        '                             " union all " &
+        '                             " select * from pd.sp_getrp15running01('{0:yyyy-MM-dd}'::date,'{1:yyyy-MM-dd}'::date) )" &
+        '                             " select r.*," &
+        '                              " case p.project_type_id " &
+        '                             " when 1 then 'OEM'" &
+        '                             " when 2 then 'ODM'" &
+        '                             " when 3 then 'PPSA' end as projecttypename," &
+        '                             " case when sub.subsbuname isnull then ""SBU"" else sub.subsbuname end as subfamily" &
+        '                             " from r " &
+        '                             " left join pd.project p on p.id = r.projectid" &
+        '                             " left join pd.subsbu sub on sub.subsbuid = p.subsbuid", startdate, lastdate)
         Return String.Format(" with r as ( select * from pd.sp_getkpi01('{0:yyyy-MM-dd}'::date,'{1:yyyy-MM-dd}'::date)" &
                                      " union all " &
                                      " select * from pd.sp_getrp15running01('{0:yyyy-MM-dd}'::date,'{1:yyyy-MM-dd}'::date) )" &
@@ -9,10 +21,14 @@
                                      " when 1 then 'OEM'" &
                                      " when 2 then 'ODM'" &
                                      " when 3 then 'PPSA' end as projecttypename," &
-                                     " case when sub.subsbuname isnull then ""SBU"" else sub.subsbuname end as subfamily" &
+                                     " case when sub.subsbuname isnull then ""SBU"" else sub.subsbuname end as subfamily," &
+                                     " cat.categories,pt.ptype,q.qualitylevel" &
                                      " from r " &
                                      " left join pd.project p on p.id = r.projectid" &
-                                     " left join pd.subsbu sub on sub.subsbuid = p.subsbuid", startdate, lastdate)
+                                     " left join pd.subsbu sub on sub.subsbuid = p.subsbuid" &
+                                     " left join pd.categories cat on cat.id = p.categoryid" &
+                                     " left join pd.ptype pt on pt.id = p.ptypeid" &
+                                     " left join pd.qualitylevel q on q.id = p.qualitylevelid", startdate, lastdate)
 
     End Function
     Public Function getSignedProject(ByVal mydate As Date) As String

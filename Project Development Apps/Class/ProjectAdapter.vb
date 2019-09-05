@@ -10,6 +10,9 @@ Public Class ProjectAdapter
     Public Property RoleBS As BindingSource
     Public Property PICBS As BindingSource
     Public Property SubSBUBS As BindingSource
+    Public Property CategoriesBS As BindingSource
+    Public Property PTypeBS As BindingSource
+    Public Property QualityLevelBS As BindingSource
 
     Private Shared myInstance As ProjectAdapter
     Private myUserInstance As UserInfo
@@ -51,6 +54,9 @@ Public Class ProjectAdapter
         RoleBS = New BindingSource
         PICBS = New BindingSource
         SubSBUBS = New BindingSource
+        CategoriesBS = New BindingSource
+        PTypeBS = New BindingSource
+        QualityLevelBS = New BindingSource
 
 
         SB.Clear()
@@ -65,6 +71,9 @@ Public Class ProjectAdapter
                   " where title <> 0 and isactive {0}" &
                   " order by username;", UserCriteria))
         SB.Append("select * from pd.subsbu order by subsbuname;")
+        SB.Append("select * from pd.categories order by categories;")
+        SB.Append("select * from pd.ptype order by ptype;")
+        SB.Append("select * from pd.qualitylevel order by qualitylevel;")
 
         DbAdapter1.getDataSet(SB.ToString, DS)
 
@@ -83,6 +92,9 @@ Public Class ProjectAdapter
         RoleBS.DataSource = DS.Tables(4)
         PICBS.DataSource = DS.Tables(5)
         SubSBUBS.DataSource = DS.Tables(6)
+        CategoriesBS.DataSource = DS.Tables(7)
+        PTypeBS.DataSource = DS.Tables(8)
+        QualityLevelBS.DataSource = DS.Tables(9)
 
         Return True
     End Function

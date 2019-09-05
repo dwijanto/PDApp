@@ -666,6 +666,9 @@ Public Class DbAdapter
             DataAdapter.UpdateCommand.Parameters.Add("", NpgsqlTypes.NpgsqlDbType.Varchar, 0, "lognumber").SourceVersion = DataRowVersion.Current
             DataAdapter.UpdateCommand.Parameters.Add("", NpgsqlTypes.NpgsqlDbType.Boolean, 0, "countasrp1").SourceVersion = DataRowVersion.Current
             DataAdapter.UpdateCommand.Parameters.Add("", NpgsqlTypes.NpgsqlDbType.Integer, 0, "subsbuid").SourceVersion = DataRowVersion.Current
+            DataAdapter.UpdateCommand.Parameters.Add("", NpgsqlTypes.NpgsqlDbType.Integer, 0, "categoryid").SourceVersion = DataRowVersion.Current
+            DataAdapter.UpdateCommand.Parameters.Add("", NpgsqlTypes.NpgsqlDbType.Integer, 0, "ptypeid").SourceVersion = DataRowVersion.Current
+            DataAdapter.UpdateCommand.Parameters.Add("", NpgsqlTypes.NpgsqlDbType.Integer, 0, "qualitylevelid").SourceVersion = DataRowVersion.Current
             DataAdapter.UpdateCommand.CommandType = CommandType.StoredProcedure
 
             sqlstr = "pd.sp_insertproject"
@@ -688,6 +691,9 @@ Public Class DbAdapter
             DataAdapter.InsertCommand.Parameters.Add("", NpgsqlTypes.NpgsqlDbType.Varchar, 0, "lognumber").SourceVersion = DataRowVersion.Current
             DataAdapter.InsertCommand.Parameters.Add("", NpgsqlTypes.NpgsqlDbType.Boolean, 0, "countasrp1").SourceVersion = DataRowVersion.Current
             DataAdapter.InsertCommand.Parameters.Add("", NpgsqlTypes.NpgsqlDbType.Integer, 0, "subsbuid").SourceVersion = DataRowVersion.Current
+            DataAdapter.InsertCommand.Parameters.Add("", NpgsqlTypes.NpgsqlDbType.Integer, 0, "categoryid").SourceVersion = DataRowVersion.Current
+            DataAdapter.InsertCommand.Parameters.Add("", NpgsqlTypes.NpgsqlDbType.Integer, 0, "ptypeid").SourceVersion = DataRowVersion.Current
+            DataAdapter.InsertCommand.Parameters.Add("", NpgsqlTypes.NpgsqlDbType.Integer, 0, "qualitylevelid").SourceVersion = DataRowVersion.Current
             DataAdapter.InsertCommand.Parameters.Add("", NpgsqlTypes.NpgsqlDbType.Bigint, 0, "id").Direction = ParameterDirection.InputOutput
             DataAdapter.InsertCommand.CommandType = CommandType.StoredProcedure
 
