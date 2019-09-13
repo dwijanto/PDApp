@@ -69,6 +69,7 @@ Public Class FormMenu
         AddHandler FailedStatusAdjustmentToolStripMenuItem.Click, AddressOf ToolStripMenuItem_Click
         AddHandler ShowOpenUserToolStripMenuItem.Click, AddressOf ToolStripMenuItem_Click
         AddHandler GeneratePeriodToolStripMenuItem.Click, AddressOf ToolStripMenuItem_Click
+
         'Admin
         MasterToolStripMenuItem.Visible = userinfo1.isAdmin
         ReportToolStripMenuItem.Visible = userinfo1.isAdmin

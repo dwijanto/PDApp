@@ -382,7 +382,7 @@ Public Class DialogProjectInput3
         End If
         CheckPanel1()
         If StatusTx = TxRecord.ViewRecord Then
-            GroupBox1.Enabled = False
+            'GroupBox1.Enabled = False
         End If
     End Sub
 
@@ -391,7 +391,7 @@ Public Class DialogProjectInput3
             If Not IsNothing(BS.Current) Then
                 Dim drv As DataRowView = BS.Current
                 Dim statusname = "" & drv.Item("statusname")
-                Panel1.Visible = (statusname = "Stopped" Or statusname = "End")
+                Panel1.Visible = Not (statusname = "Stopped" Or statusname = "End")
             End If
 
         End If

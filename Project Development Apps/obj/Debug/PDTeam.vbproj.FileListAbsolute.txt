@@ -86,3 +86,5 @@ C:\Users\dlie\Documents\GitHub\PDApp\Project Development Apps\obj\Debug\PDTeam.F
 C:\Users\dlie\Documents\GitHub\PDApp\Project Development Apps\obj\Debug\PDTeam.FormVendorV2.resources
 C:\Users\dlie\Documents\GitHub\PDApp\Project Development Apps\obj\Debug\PDTeam.Resources.resources
 C:\Users\dlie\Documents\GitHub\PDApp\Project Development Apps\obj\Debug\PDTeam.vbproj.GenerateResource.Cache
+C:\Users\dlie\Documents\GitHub\PDApp\Project Development Apps\bin\Debug\npgsql.dll
+C:\Users\dlie\Documents\GitHub\PDApp\Project Development Apps\bin\Debug\Mono.Security.dll
