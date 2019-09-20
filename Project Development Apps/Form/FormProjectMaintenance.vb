@@ -104,7 +104,7 @@ Public Class FormProjectMaintenance
                     'MessageBox.Show("You cannot modify this record. Please contact Admin.")
 
                     'Exit Sub
-                    action = TxRecord.ViewRecord
+                    'action = TxRecord.ViewRecord
 
                 End If
             End If

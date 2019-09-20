@@ -181,8 +181,4 @@ Public Class FormMenu
     End Sub
 
 
-
-    Private Sub ProjectMaintenanceToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ProjectMaintenanceToolStripMenuItem.Click
-
-    End Sub
 End Class
