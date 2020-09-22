@@ -55,7 +55,7 @@ Partial Class FormMenu
         '
         Me.ImportToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ProjectStageStatusToolStripMenuItem, Me.ProjectMaintenanceToolStripMenuItem, Me.ClosingPeriodToolStripMenuItem})
         Me.ImportToolStripMenuItem.Name = "ImportToolStripMenuItem"
-        Me.ImportToolStripMenuItem.Size = New System.Drawing.Size(81, 20)
+        Me.ImportToolStripMenuItem.Size = New System.Drawing.Size(80, 20)
         Me.ImportToolStripMenuItem.Text = "Transaction"
         '
         'ProjectStageStatusToolStripMenuItem

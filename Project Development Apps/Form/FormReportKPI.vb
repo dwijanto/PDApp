@@ -117,6 +117,7 @@ Public Class FormReportKPI
                                       " union all select 'Total HPC',tx.* from pd.txhistory tx where period >= {0} and period <= {1} and sbu in('PC','LC','H.Comf','H.Clean')" &
                                       " union all select 'Total CW',tx.* from pd.txhistory tx where period >= {0} and period <= {1} and sbu = 'CK'" &
                                       " union all select 'Total SA',tx.* from pd.txhistory tx where period >= {0} and period <= {1} and sbu = 'SA'" &
+                                      " union all select 'Total OBH',tx.* from pd.txhistory tx where period >= {0} and period <= {1} and sbu = 'OBH'" &
                                       " union all select 'Total KE + HPC',tx.* from pd.txhistory tx where period >= {0} and period <= {1} and sbu in ('EC','BnB','FP','PC','LC','H.Comf','H.Clean')", String.Format("{0:yyyy01}", DateTimePicker1.Value.Date), String.Format("{0:yyyyMM}", DateTimePicker1.Value.Date))
 
             q2.SheetName = "TxHistory"
