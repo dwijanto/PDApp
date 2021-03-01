@@ -86,6 +86,7 @@ Public Class FormVendorV2
     End Sub
 
     Private Sub ToolStripButton3_Click(sender As Object, e As EventArgs) Handles ToolStripButton3.Click
+        Me.Validate()
         myAdapter.Save()
     End Sub
 
@@ -126,6 +127,7 @@ Public Class FormVendorV2
         Dim VendorBS As New BindingSource
         Dim mytbl As New DataTable
         mytbl = TryCast(myAdapter.BS.DataSource, DataTable).Copy
+
         VendorBS.DataSource = mytbl
 
         Dim myform As DialogTopVendorV2 = DialogTopVendorV2.getInstance(VendorBS, myAdapter.topBS)

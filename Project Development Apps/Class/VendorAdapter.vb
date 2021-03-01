@@ -23,7 +23,7 @@
 
         SB.Clear()
 
-        SB.Append("select v.* from pd.vendor v order by v.id;")
+        SB.Append("select v.* from pd.vendor v order by v.shortname;")
         SB.Append("select t.year::character varying,t.vendorid,t.orderline,t.id,v.shortname from  pd.topvendor t left join pd.vendor v on v.id = t.vendorid order by t.year,t.orderline,v.shortname;")
         DbAdapter1.getDataSet(SB.ToString, DS)
         'Set Primary Key

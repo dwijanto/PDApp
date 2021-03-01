@@ -22,11 +22,23 @@ Partial Class FormProjectSigned
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle19 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle20 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle21 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormProjectSigned))
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
+        Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripButton2 = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripButton3 = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripButton4 = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripLabel1 = New System.Windows.Forms.ToolStripLabel()
+        Me.ToolStripTextBox1 = New System.Windows.Forms.ToolStripTextBox()
+        Me.ToolStripButton5 = New System.Windows.Forms.ToolStripButton()
+        Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
+        Me.ToolStripStatusLabel1 = New System.Windows.Forms.ToolStripStatusLabel()
+        Me.ToolStripStatusLabel2 = New System.Windows.Forms.ToolStripStatusLabel()
+        Me.ToolStripProgressBar1 = New System.Windows.Forms.ToolStripProgressBar()
         Me.CProjectId = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.CProjectName = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -35,18 +47,6 @@ Partial Class FormProjectSigned
         Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
-        Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton()
-        Me.ToolStripButton2 = New System.Windows.Forms.ToolStripButton()
-        Me.ToolStripButton3 = New System.Windows.Forms.ToolStripButton()
-        Me.ToolStripButton4 = New System.Windows.Forms.ToolStripButton()
-        Me.ToolStripLabel1 = New System.Windows.Forms.ToolStripLabel()
-        Me.ToolStripTextBox1 = New System.Windows.Forms.ToolStripTextBox()
-        Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
-        Me.ToolStripStatusLabel1 = New System.Windows.Forms.ToolStripStatusLabel()
-        Me.ToolStripProgressBar1 = New System.Windows.Forms.ToolStripProgressBar()
-        Me.ToolStripButton5 = New System.Windows.Forms.ToolStripButton()
-        Me.ToolStripStatusLabel2 = New System.Windows.Forms.ToolStripStatusLabel()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.ToolStrip1.SuspendLayout()
         Me.StatusStrip1.SuspendLayout()
@@ -63,78 +63,9 @@ Partial Class FormProjectSigned
         Me.DataGridView1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.DataGridView1.Location = New System.Drawing.Point(0, 25)
         Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.ReadOnly = True
         Me.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.DataGridView1.Size = New System.Drawing.Size(1064, 430)
         Me.DataGridView1.TabIndex = 10
-        '
-        'CProjectId
-        '
-        Me.CProjectId.DataPropertyName = "pidname"
-        Me.CProjectId.HeaderText = "Project Id"
-        Me.CProjectId.Name = "CProjectId"
-        Me.CProjectId.ReadOnly = True
-        Me.CProjectId.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.CProjectId.Width = 200
-        '
-        'CProjectName
-        '
-        Me.CProjectName.DataPropertyName = "projectname"
-        Me.CProjectName.HeaderText = "Project Name"
-        Me.CProjectName.Name = "CProjectName"
-        Me.CProjectName.ReadOnly = True
-        Me.CProjectName.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.CProjectName.Width = 200
-        '
-        'Column2
-        '
-        Me.Column2.DataPropertyName = "pic"
-        Me.Column2.HeaderText = "PIC"
-        Me.Column2.Name = "Column2"
-        Me.Column2.ReadOnly = True
-        '
-        'CShortName
-        '
-        Me.CShortName.DataPropertyName = "shortname"
-        Me.CShortName.HeaderText = "Vendor Short Name"
-        Me.CShortName.Name = "CShortName"
-        Me.CShortName.ReadOnly = True
-        Me.CShortName.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.CShortName.Width = 150
-        '
-        'CProjectStage
-        '
-        Me.CProjectStage.DataPropertyName = "projectstage"
-        Me.CProjectStage.HeaderText = "Project Stage"
-        Me.CProjectStage.Name = "CProjectStage"
-        Me.CProjectStage.ReadOnly = True
-        '
-        'Column3
-        '
-        Me.Column3.DataPropertyName = "signed_date"
-        DataGridViewCellStyle19.Format = "dd-MMM-yyyy"
-        Me.Column3.DefaultCellStyle = DataGridViewCellStyle19
-        Me.Column3.HeaderText = "Signed Date"
-        Me.Column3.Name = "Column3"
-        Me.Column3.ReadOnly = True
-        '
-        'Column4
-        '
-        Me.Column4.DataPropertyName = "phase_status_name"
-        DataGridViewCellStyle20.NullValue = "n/a"
-        Me.Column4.DefaultCellStyle = DataGridViewCellStyle20
-        Me.Column4.HeaderText = "Passed/Failed"
-        Me.Column4.Name = "Column4"
-        Me.Column4.ReadOnly = True
-        '
-        'Column1
-        '
-        Me.Column1.DataPropertyName = "postingdate"
-        DataGridViewCellStyle21.Format = "dd-MMM-yyyy"
-        Me.Column1.DefaultCellStyle = DataGridViewCellStyle21
-        Me.Column1.HeaderText = "Posting Date"
-        Me.Column1.Name = "Column1"
-        Me.Column1.ReadOnly = True
         '
         'ToolStrip1
         '
@@ -195,6 +126,15 @@ Partial Class FormProjectSigned
         Me.ToolStripTextBox1.Size = New System.Drawing.Size(200, 25)
         Me.ToolStripTextBox1.ToolTipText = "Filter"
         '
+        'ToolStripButton5
+        '
+        Me.ToolStripButton5.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text
+        Me.ToolStripButton5.Image = CType(resources.GetObject("ToolStripButton5.Image"), System.Drawing.Image)
+        Me.ToolStripButton5.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.ToolStripButton5.Name = "ToolStripButton5"
+        Me.ToolStripButton5.Size = New System.Drawing.Size(89, 22)
+        Me.ToolStripButton5.Text = "Export to Excel"
+        '
         'StatusStrip1
         '
         Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripStatusLabel1, Me.ToolStripStatusLabel2, Me.ToolStripProgressBar1})
@@ -210,25 +150,77 @@ Partial Class FormProjectSigned
         Me.ToolStripStatusLabel1.Size = New System.Drawing.Size(0, 17)
         Me.ToolStripStatusLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
+        'ToolStripStatusLabel2
+        '
+        Me.ToolStripStatusLabel2.Name = "ToolStripStatusLabel2"
+        Me.ToolStripStatusLabel2.Size = New System.Drawing.Size(947, 17)
+        Me.ToolStripStatusLabel2.Spring = True
+        '
         'ToolStripProgressBar1
         '
         Me.ToolStripProgressBar1.Name = "ToolStripProgressBar1"
         Me.ToolStripProgressBar1.Size = New System.Drawing.Size(100, 16)
         '
-        'ToolStripButton5
+        'CProjectId
         '
-        Me.ToolStripButton5.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text
-        Me.ToolStripButton5.Image = CType(resources.GetObject("ToolStripButton5.Image"), System.Drawing.Image)
-        Me.ToolStripButton5.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.ToolStripButton5.Name = "ToolStripButton5"
-        Me.ToolStripButton5.Size = New System.Drawing.Size(87, 22)
-        Me.ToolStripButton5.Text = "Export to Excel"
+        Me.CProjectId.DataPropertyName = "pidname"
+        Me.CProjectId.HeaderText = "Project Id"
+        Me.CProjectId.Name = "CProjectId"
+        Me.CProjectId.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.CProjectId.Width = 200
         '
-        'ToolStripStatusLabel2
+        'CProjectName
         '
-        Me.ToolStripStatusLabel2.Name = "ToolStripStatusLabel2"
-        Me.ToolStripStatusLabel2.Size = New System.Drawing.Size(916, 17)
-        Me.ToolStripStatusLabel2.Spring = True
+        Me.CProjectName.DataPropertyName = "projectname"
+        Me.CProjectName.HeaderText = "Project Name"
+        Me.CProjectName.Name = "CProjectName"
+        Me.CProjectName.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.CProjectName.Width = 200
+        '
+        'Column2
+        '
+        Me.Column2.DataPropertyName = "pic"
+        Me.Column2.HeaderText = "PIC"
+        Me.Column2.Name = "Column2"
+        '
+        'CShortName
+        '
+        Me.CShortName.DataPropertyName = "shortname"
+        Me.CShortName.HeaderText = "Vendor Short Name"
+        Me.CShortName.Name = "CShortName"
+        Me.CShortName.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.CShortName.Width = 150
+        '
+        'CProjectStage
+        '
+        Me.CProjectStage.DataPropertyName = "projectstage"
+        Me.CProjectStage.HeaderText = "Project Stage"
+        Me.CProjectStage.Name = "CProjectStage"
+        '
+        'Column3
+        '
+        Me.Column3.DataPropertyName = "signed_date"
+        DataGridViewCellStyle1.Format = "dd-MMM-yyyy"
+        Me.Column3.DefaultCellStyle = DataGridViewCellStyle1
+        Me.Column3.HeaderText = "Signed Date"
+        Me.Column3.Name = "Column3"
+        '
+        'Column4
+        '
+        Me.Column4.DataPropertyName = "phase_status_name"
+        DataGridViewCellStyle2.NullValue = "n/a"
+        Me.Column4.DefaultCellStyle = DataGridViewCellStyle2
+        Me.Column4.HeaderText = "Passed/Failed"
+        Me.Column4.Name = "Column4"
+        '
+        'Column1
+        '
+        Me.Column1.DataPropertyName = "postingdate"
+        DataGridViewCellStyle3.Format = "dd-MMM-yyyy"
+        Me.Column1.DefaultCellStyle = DataGridViewCellStyle3
+        Me.Column1.HeaderText = "Posting Date"
+        Me.Column1.Name = "Column1"
+        Me.Column1.ReadOnly = True
         '
         'FormProjectSigned
         '
@@ -259,6 +251,10 @@ Partial Class FormProjectSigned
     Friend WithEvents ToolStripLabel1 As System.Windows.Forms.ToolStripLabel
     Friend WithEvents ToolStripTextBox1 As System.Windows.Forms.ToolStripTextBox
     Friend WithEvents StatusStrip1 As System.Windows.Forms.StatusStrip
+    Friend WithEvents ToolStripButton5 As System.Windows.Forms.ToolStripButton
+    Public WithEvents ToolStripStatusLabel1 As System.Windows.Forms.ToolStripStatusLabel
+    Public WithEvents ToolStripProgressBar1 As System.Windows.Forms.ToolStripProgressBar
+    Public WithEvents ToolStripStatusLabel2 As System.Windows.Forms.ToolStripStatusLabel
     Friend WithEvents CProjectId As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents CProjectName As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Column2 As System.Windows.Forms.DataGridViewTextBoxColumn
@@ -267,8 +263,4 @@ Partial Class FormProjectSigned
     Friend WithEvents Column3 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Column4 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Column1 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents ToolStripButton5 As System.Windows.Forms.ToolStripButton
-    Public WithEvents ToolStripStatusLabel1 As System.Windows.Forms.ToolStripStatusLabel
-    Public WithEvents ToolStripProgressBar1 As System.Windows.Forms.ToolStripProgressBar
-    Public WithEvents ToolStripStatusLabel2 As System.Windows.Forms.ToolStripStatusLabel
 End Class

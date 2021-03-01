@@ -159,6 +159,8 @@ Public Class FormProjectSigned
 
                     DataGridView1.AutoGenerateColumns = False
                     DataGridView1.DataSource = myAdapter.BS
+
+                    DataGridView1.Columns("Column1").ReadOnly = Not (myuserinfo.isAdmin) 'must reverse
             End Select
         End If
     End Sub
@@ -174,6 +176,7 @@ Public Class FormProjectSigned
     End Sub
 
     Private Sub ToolStripButton3_Click(sender As Object, e As EventArgs) Handles ToolStripButton3.Click
+        Me.Validate()
         myAdapter.Save()
     End Sub
 
